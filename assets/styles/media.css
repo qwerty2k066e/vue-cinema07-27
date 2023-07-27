@@ -1,0 +1,135 @@
+@media (max-width:1199.99px) {
+    .films__cards-group {
+        flex-wrap: wrap;
+        row-gap: 10px;
+        column-gap: 10px;
+        justify-content: center;
+    }
+    
+    .collections__content-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+}
+
+@media (max-width:991.99px) {
+
+
+
+    .nav {
+        position: relative;
+    }
+}
+
+@media (max-width:767.99px) {
+    .nav__content-list {
+        position: absolute;
+        top: -300px;
+        z-index: 10;
+        flex-direction: column;
+        align-items: center;
+        right: 0;
+        background: black;
+        padding: 20px;
+        transition: .5s;
+
+    }
+
+    .nav__menu-btn {
+        display: flex;
+    }
+
+    .nav__content-list-link::after {
+        bottom: -10px;
+    }
+
+    .nav__menu:hover .nav__content-list {
+        top: 100%;
+    }
+
+    .header__content-title {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .header__content-descr {
+        font-size: 14px;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .header__content-btns-group {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .video__section {
+        background: linear-gradient(90deg, rgb(222, 247, 255, .5) 0%, #F4FCFF 0%, rgba(255, 255, 255, 0.00) 100%);
+    }
+
+    .video__section-content img {
+        max-width: 100%;
+    }
+    
+    .series__content-iterible {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:575.99px) {
+
+    .films__card {
+        width: 100%;
+    }
+
+    .films__card img {
+        max-width: 100%;
+    }
+    
+    .vider__section-descr{
+        font-size: 16px;  
+        margin-top: 25px;
+        margin-bottom: 25px;
+        line-height: 22px;
+    }
+    
+    .collections__content-card {
+        width: 300px;
+        
+    }
+    
+    .video__section-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .name__title , .item__title{
+        font-size: 18px;
+    }
+    
+    .footer__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+}
+
+@media (max-width:319.99px) {
+    .name__title , .item__title{
+        font-size: 13px;
+    }
+    
+    .apple-market{
+        margin: 20px 0px;
+    }
+    
+    .proweb__text {
+        font-size: 14px;
+    }
+    
+}
